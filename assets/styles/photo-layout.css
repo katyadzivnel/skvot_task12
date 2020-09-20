@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+}
+
+.col-1 {
+    width: calc(1 / 5 * 100%);
+}
+
+.col-2 {
+    width: calc(2 / 5 * 100%);
+}
+
+.col-3 {
+    width: calc(3 / 5 * 100%);
+}
+
+.col-4 {
+    width: calc(4 / 5 * 100%);
+}
+
+.col-5 {
+    width: calc(5 / 5 * 100%);
+}
+
+.col + .col {
+    border-left: 1px solid black;
+}
+
+.grid + .grid {
+    margin-top: 200px;
+}
+
+.image{
+    width: 100%;
+    padding: 0 calc(85 / 575 * 100%);
+}
+
